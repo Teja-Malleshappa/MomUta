@@ -1,0 +1,33 @@
+{
+  "name": "momuta",
+  "version": "1.0.0",
+  "description": "The food delivary app",
+  "keywords": [
+    "Food"
+  ],
+  "homepage": "https://github.com/Teja-Malleshappa/MomUta#readme",
+  "bugs": {
+    "url": "https://github.com/Teja-Malleshappa/MomUta/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teja-Malleshappa/MomUta.git"
+  },
+  "license": "ISC",
+  "author": "Teja M",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.11"
+  }
+}
