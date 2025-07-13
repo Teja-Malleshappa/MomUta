@@ -21,7 +21,7 @@ const HomeHero = () => {
           className="h-[450px] w-[250px] absolute left-0 top-0 object-center border-none"
         />
         <div className="flex items-center justify-between py-0 px-4 order-1">
-          <p className="w-[60%] text-center my-0 mx-auto pl-3 text-white font-[Gilroy] text-5xl font-semibold tracking-[-0.3px] !leading-14">
+          <p className="w-[60%] text-center my-0 mx-auto pl-3 text-white  text-5xl font-semibold tracking-[-0.3px] !leading-14">
             Order food & groceries. Discover best restaurants. Swiggy it!
           </p>
         </div>
@@ -52,7 +52,7 @@ const HomeHero = () => {
                   tabIndex={1}
                   maxLength={30}
                   placeholder="Enter your delivery location"
-                  className="bg-transparent !leading-normal border-none outline-none w-full m-0 shadow-none rounded-none whitespace-nowrap overflow-ellipsis font-medium h-[58px] caret-[#ff5200] text-[#02060c99] font-[Gilroy] text-lg tracking-[-0.4px] p-0"
+                  className="bg-transparent !leading-normal border-none outline-none w-full m-0 shadow-none rounded-none whitespace-nowrap overflow-ellipsis font-medium h-[58px] caret-[#ff5200] text-[#02060c99]  text-lg tracking-[-0.4px] p-0"
                 />
                 <div className="absolute right-5 bottom-[26px] text-sm font-normal text-[#5d8ed5] cursor-pointer [will-change:transform] translate-y-[70%] transition duration-200 ease-in-out"></div>
                 <label className="absolute left-0 bottom-6 pl-5 leading-5 cursor-text transition duration-200 ease-in-out w-full pointer-events-none [will-change:transform,color,font-size]"></label>
@@ -65,7 +65,7 @@ const HomeHero = () => {
           <div className=" pl-4 w-[500px]">
             <div className="relative flex items-center w-full mx-auto my-0 rounded-2xl  h-[60px] bg-white border-[1.5px] border-solid border-[#02060c26]">
               <div type="button" className="pl-4">
-                <div className="font-[Gilroy] font-normal text-lg !leading-[22px] tracking-[-0.45px] text-[#02060c73] overflow-hidden w-full text-left line-clamp-1">
+                <div className=" font-normal text-lg !leading-[22px] tracking-[-0.45px] text-[#02060c73] overflow-hidden w-full text-left line-clamp-1">
                   Search for restaurant, item or more
                 </div>
               </div>
