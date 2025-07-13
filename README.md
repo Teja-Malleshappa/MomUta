@@ -1,2 +1,1 @@
-# MomUta
-A Food delivery app
+My Swiggy PROJECT
