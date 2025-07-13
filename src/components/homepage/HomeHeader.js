@@ -17,14 +17,14 @@ const HomeHeader = () => {
             <a
               key={index}
               href={item.link}
-              className="text-white text-base !leading-[21px] not-italic font-semibold tracking-[-0.4px] cursor-pointer no-underline z-40 bg-transparent font-[Gilroy]"
+              className="text-white text-base !leading-[21px] not-italic font-semibold tracking-[-0.4px] cursor-pointer no-underline z-40 bg-transparent "
             >
               {item.name}
             </a>
           ))}
           <a
             href=""
-            className="flex h-[54px] py-3 px-4 justify-center items-center gap-1 rounded-xl border border-solid border-white text-white cursor-pointer font-[Gilroy] text-base !leading-[21px] not-italic font-semibold no-underline bg-transparent"
+            className="flex h-[54px] py-3 px-4 justify-center items-center gap-1 rounded-xl border border-solid border-white text-white cursor-pointer  text-base !leading-[21px] not-italic font-semibold no-underline bg-transparent"
           >
             Get the App{" "}
             <div className="leading-0">
