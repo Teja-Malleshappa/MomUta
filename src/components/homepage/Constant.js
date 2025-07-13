@@ -3,5 +3,5 @@ export const navList = [
     {
       name: "Partner with us",
       link: "https://partner.swiggy.com/login#/swiggy",
-    },
+    }
   ];
