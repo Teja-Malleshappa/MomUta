@@ -36,7 +36,7 @@ const HomeCarousel = ({
             <div className="flex items-center gap-0.5  font-extralight text-base !leading-[21px] tracking-[-0.4px] text-[#ffffffeb] w-full break-words [-webkit-line-clamp:2] [-webkit-box-orient:vertical]"></div>
           </div>
         </div>
-        <div className="overflow-y-scroll mx-0">
+        <div className="overflow-y-scroll no-scollbar mx-0">
           <div className="flex pt-0">
             {bestItemsRow1 &&
               bestItemsRow1.length > 0 &&

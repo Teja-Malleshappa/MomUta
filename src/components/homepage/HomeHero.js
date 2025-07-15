@@ -90,7 +90,7 @@ const HomeHero = () => {
         ></img>
       </div>
       <div className="flex justify-center items-center bg-[#ff5200] px-2 pb-5">
-        <div className="flex items-center justify-center overflow-x-scroll flex-nowrap w-full max-w-[80%] max-h-[320px]">
+        <div className="flex items-center justify-center overflow-x-scroll no-scollbar flex-nowrap w-full max-w-[80%] max-h-[320px]">
           {HeroCardList?.map(({ link, imgSrc }, index) => (
             <HeroCard key={index} link={link} imgSrc={imgSrc} />
           ))}

@@ -5,3 +5,12 @@
 body {
   font-family: 'Winky Rough', cursive;
 }
+
+.no-scollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scollbar::-webkit-scrollbar{
+    display: none;
+}
