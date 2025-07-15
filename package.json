@@ -17,7 +17,7 @@
   "author": "Teja M",
   "type": "commonjs",
   "scripts": {
-    "start": "parcel src/index.html",
+    "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "test": "jest"
   },
