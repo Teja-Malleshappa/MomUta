@@ -84,8 +84,9 @@ const HomeHero = () => {
           </div>
         </div>
         <img
-          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+          src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg"
           alt="right_img"
+          loading="lazy"
           className="h-[450px] w-[250px] absolute right-0 top-0 object-cover border-none"
         ></img>
       </div>

@@ -2,7 +2,6 @@ import CitiesWithDelivery from "./CitiesWithDelivery";
 import { BestFoodImages01, BestFoodImages02, DineoutList, FoodDeliveryCities, InstamartDeliveryCities, InstamartList } from "./Constant";
 import HomeBanner from "./HomeBanner";
 import HomeCarousel from "./HomeCarousel"
-import HomeFooter from "./HomeFooter";
 
 const HomeBody = () => {
   return (
@@ -17,7 +16,6 @@ const HomeBody = () => {
       <div className="pt-[62px] pb-[80px]">
         <CitiesWithDelivery title="Cities with grocery delivery" text="Order grocery delivery" cities={InstamartDeliveryCities}/>
       </div>
-      <HomeFooter />
     </>
   );
 };
