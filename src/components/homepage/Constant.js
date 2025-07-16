@@ -437,3 +437,55 @@ export const InstamartDeliveryCities = [
   }
 ]
 
+export const navSections = {
+  company: {
+    heading: "Company",
+    items: [
+      { name: "About Us", link: "https://www.swiggy.com/about" },
+      { name: "Swiggy Corporate", link: "https://www.swiggy.com/corporate/" },
+      { name: "Careers", link: "https://www.swiggy.com/careers" },
+      { name: "Team", link: "https://www.swiggy.com/team" },
+      { name: "Swiggy One", link: "https://www.swiggy.com/swiggy-super" },
+      { name: "Swiggy Instamart", link: "https://www.swiggy.com/instamart" },
+      { name: "Swiggy Dineout", link: "https://www.swiggy.com/dineout" },
+      { name: "Minis", link: "https://mini.store/" },
+      { name: "Pyng", link: "https://pyng.co.in/" }
+    ]
+  },
+  contact: {
+    heading: "Contact Us",
+    items: [
+      { name: "Help & Support", link: "https://www.swiggy.com/support" },
+      { name: "Partner with us", link: "https://partner-with-us.swiggy.com/onboard#/swiggy" },
+      { name: "Ride with us", link: "https://ride.swiggy.com" }
+    ]
+  },
+  legal: {
+    heading: "Legal",
+    items: [
+      { name: "Terms & Conditions", link: "https://www.swiggy.com/terms-and-conditions" },
+      { name: "Cookie Policy", link: "https://www.swiggy.com/cookie-policy" },
+      { name: "Privacy Policy", link: "https://www.swiggy.com/privacy-policy" }
+    ]
+  },
+  availableCities: {
+    heading: "Available in:",
+    items: [
+      { name: "bangalore", link: "https://www.swiggy.com/city/bangalore" },
+      { name: "gurgaon", link: "https://www.swiggy.com/city/gurgaon" },
+      { name: "hyderabad", link: "https://www.swiggy.com/city/hyderabad" },
+      { name: "delhi", link: "https://www.swiggy.com/city/delhi" },
+      { name: "mumbai", link: "https://www.swiggy.com/city/mumbai" },
+      { name: "pune", link: "https://www.swiggy.com/city/pune" },
+      { name: "685 cities", link: null } 
+    ]
+  },
+  lifeAtSwiggy: {
+    heading: "Life at Swiggy",
+    items: [
+      { name: "Explore with Swiggy", link: "https://blog.swiggy.com/" },
+      { name: "Swiggy News", link: "https://blog.swiggy.com/category/swiggy-restaurant-awards/" },
+      { name: "Snackables", link: "https://blog.swiggy.com/category/snackables/campaigns/" }
+    ]
+  }
+};
