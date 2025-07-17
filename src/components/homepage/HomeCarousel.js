@@ -32,7 +32,7 @@ const HomeCarousel = ({
             </div>
           </div>
         </div>
-        <div className="overflow-y-scroll no-scollbar mx-0">
+        <div className="overflow-y-scroll no-scrollbar mx-0">
           <div className="flex pt-0">
             {bestItemsRow1 &&
               bestItemsRow1.length > 0 &&

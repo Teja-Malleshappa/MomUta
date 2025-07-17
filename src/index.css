@@ -6,11 +6,11 @@ body {
   font-family: 'Winky Rough', cursive;
 }
 
-.no-scollbar {
+.no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-.no-scollbar::-webkit-scrollbar{
+.no-scrollbar::-webkit-scrollbar{
     display: none;
 }
