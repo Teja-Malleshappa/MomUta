@@ -1,5 +1,6 @@
 import { ChevronDown, MapPin, Search } from "lucide-react";
-import { HeroCardList } from "./Constant";
+import { HeroCardList } from "../../generic/Constant";
+import FoodRestaurants from "../pages/FoodRestaurants";
 
 const HeroCard = ({ link, imgSrc }) => {
   return (
@@ -86,11 +87,12 @@ const HomeHero = () => {
         <img
           src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
           alt="right_img"
+          loading="lazy"
           className="h-[450px] w-[250px] absolute right-0 top-0 object-cover border-none"
-        ></img>
+        />
       </div>
       <div className="flex justify-center items-center bg-[#ff5200] px-2 pb-5">
-        <div className="flex items-center justify-center overflow-x-scroll flex-nowrap w-full max-w-[80%] max-h-[320px]">
+        <div className="flex items-center justify-center overflow-x-scroll no-scrollbar flex-nowrap w-full max-w-[80%] max-h-[320px]">
           {HeroCardList?.map(({ link, imgSrc }, index) => (
             <HeroCard key={index} link={link} imgSrc={imgSrc} />
           ))}
