@@ -1,5 +1,5 @@
 import { ArrowUpRight, LucideShieldUser } from "lucide-react";
-import { navList as NavList } from "./Constant";
+import { navList as NavList } from "../../generic/Constant";
 const HomeHeader = () => {
   return (
     <div className="bg-[#ff5200] py-8 px-0 flex justify-center items-center relative z-50">

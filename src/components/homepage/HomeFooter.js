@@ -4,7 +4,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa6";
-import { navSections } from "./Constant";
+import { navSections } from "../../generic/Constant";
 import FooterCard from "./FooterCard";
 
 const HomeFooter = () => {

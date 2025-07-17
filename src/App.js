@@ -1,14 +1,16 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import HomePage from "./components/HomePage";
+import { Outlet, RouterProvider } from "react-router";
+import { router } from "./components/appRoutes/AppRoute";
 
 const App = () => {
   return (
-    <div className="w-full h-full font-winky">
-      <HomePage />
+    <div className="text-[#02060c]">
+      <Outlet />
     </div>
   );
 };
 
+export default App;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<RouterProvider router={router} />);
