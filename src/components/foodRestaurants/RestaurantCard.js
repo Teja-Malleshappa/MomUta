@@ -1,5 +1,6 @@
 import { BsDot } from "react-icons/bs";
 import { FaStar } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const RestaurantCard = ({
   link,
@@ -12,7 +13,7 @@ const RestaurantCard = ({
   areaName,
 }) => {
   return (
-    <a href={link}>
+    <Link to={link}>
       <div className="w-[273px] bg-white flex flex-col gap-3">
         <div className="relative">
           <div className="bg-gradient-to-t from-black to-transparent z-10 absolute  rounded-b-2xl h-[70px] left-0 bottom-0 right-0"></div>
@@ -67,7 +68,7 @@ const RestaurantCard = ({
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

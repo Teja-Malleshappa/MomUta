@@ -1,18 +1,68 @@
-import { ChevronDown, MapPin, Search } from "lucide-react";
+import { ChevronDown, Search } from "lucide-react";
 import { HeroCardList } from "../../generic/Constant";
-import FoodRestaurants from "../pages/FoodRestaurants";
+import { Link, useLocation } from "react-router";
+import { IoLocation } from "react-icons/io5";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  fecthAddressRecommendation,
+  fetchLocationData,
+  getCards,
+  resetLocations,
+} from "../../features/locationSlice";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const HeroCard = ({ link, imgSrc }) => {
   return (
     <div className="w-full h-full">
-      <a href={link} title="food" className="no-underline h-full w-full block">
+      <Link to={link} title="food" className="no-underline h-full w-full block">
         <img src={imgSrc} alt="Food" />
-      </a>
+      </Link>
     </div>
   );
 };
 
 const HomeHero = () => {
+  const [input, setInput] = useState("");
+  const [callLocationAPI, setCallLocationsAPI] = useState(true);
+  const [endIndex, setEndIndex] = useState(3);
+
+  const {
+    locations,
+    addressRecommended: {
+      geometry: { location: { lat = "", lng = "" } = {} } = {},
+    } = {},
+  } = useSelector((state) => state?.location);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      callLocationAPI && dispatch(fetchLocationData(input));
+    }, 300);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [input, dispatch]);
+
+  const handleSelectedLocation = (description, place_id) => {
+    setInput(description);
+    dispatch(fecthAddressRecommendation(place_id));
+    dispatch(getCards(lat, lng, 15));
+
+    // const locationData = JSON.parse(localStorage.setItem({'locations': locations, 'lat': lat, 'lng': lng}))
+    // localStorage.setItem(JSON.stringify(locationData))
+
+    dispatch(resetLocations());
+    setCallLocationsAPI(false);
+  };
+  
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+    setCallLocationsAPI(true);
+    setEndIndex(3)
+  };
+  console.log(locations, lat, lng)
+
   return (
     <>
       <div className="bg-[#ff5200] flex flex-col items-center justify-center pt-16 pb-8 px-0 relative">
@@ -22,28 +72,14 @@ const HomeHero = () => {
           className="h-[450px] w-[250px] absolute left-0 top-0 object-center border-none"
         />
         <div className="flex items-center justify-between py-0 px-4 order-1">
-          <p className="w-[60%] text-center my-0 mx-auto pl-3 text-white  text-5xl font-semibold tracking-[-0.3px] !leading-14">
+          <p className="w-[60%] text-center my-0 mx-auto pl-3 text-white text-5xl font-semibold tracking-[-0.3px] !leading-14">
             Order food & groceries. Discover best restaurants. Swiggy it!
           </p>
         </div>
         <div className="flex justify-center items-center mt-6 mb-0 mx-auto order-2 w-full">
           <div className="bg-white rounded-2xl">
             <div className="relative flex items-center justify-center bg-white rounded-2xl px-4 py-0 gap-[10px] border-[1.5px] border-solid border-[#02060c26]">
-              {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 18 23"
-              fill="none"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M10.115 21.8122C12.4772 19.4062 17.7886 13.4751 17.7886 8.78883C17.7886 3.79647 13.9976 0 9.00526 0C4.0129 0 0.210938 3.79647 0.210938 8.78883C0.210938 13.4755 5.52998 19.4073 7.89476 21.8129C8.51149 22.4403 9.49871 22.44 10.115 21.8122ZM8.99988 12.7888C11.4269 12.7888 13.3943 10.8214 13.3943 8.39441C13.3943 5.96745 11.4269 4 8.99988 4C6.57292 4 4.60547 5.96745 4.60547 8.39441C4.60547 10.8214 6.57292 12.7888 8.99988 12.7888Z"
-                fill="#FF5200"
-              ></path>
-            </svg> */}
-              <MapPin className="w-6 h-6" fill="#ff5200" strokeWidth={0} />
+              <IoLocation className="w-6 h-6 text-[#ff5200]" />
               <div className="block relative p-0">
                 <input
                   type="text"
@@ -52,6 +88,10 @@ const HomeHero = () => {
                   autoComplete="off"
                   tabIndex={1}
                   maxLength={30}
+                  value={input}
+                  onChange={(e) => {
+                    handleInputChange(e);
+                  }}
                   placeholder="Enter your delivery location"
                   className="bg-transparent !leading-normal border-none outline-none w-full m-0 shadow-none rounded-none whitespace-nowrap overflow-ellipsis font-medium h-[58px] caret-[#ff5200] text-[#02060c99]  text-lg tracking-[-0.4px] p-0"
                 />
@@ -62,6 +102,38 @@ const HomeHero = () => {
                 <ChevronDown className="w-5 h-[21px] text-[#02060c73]" />
               </div>
             </div>
+            {locations && locations.length > 0 && (
+              <ul className="absolute mt-5 py-8 px-6 rounded-2xl bg-white z-20 flex flex-col gap-2 border border-[#02060c33] max-h-[400px] w-[785px] shadow shadow-[#282c3f1a] overflow-y-scroll overflow-x-hidden">
+                <p className="text-base tracking-[2px] text-[#02060c73] uppercase mb-6">
+                  SEARCH RESULT
+                </p>
+                {locations &&
+                  locations
+                    ?.slice(0, endIndex)
+                    ?.map(({ description, place_id }, index) => (
+                      <button
+                        key={index}
+                        onClick={() => {
+                          handleSelectedLocation(description, place_id);
+                        }}
+                        className="text-[#02060c99] flex items-center gap-2.5 text-lg hover:text-[#ff5200] cursor-pointer"
+                      >
+                        <FaLocationArrow className="size-5" />
+                        <span className="w-full text-start truncate whitespace-nowrap">
+                          {description}
+                        </span>
+                      </button>
+                    ))}
+                {endIndex && (
+                  <button
+                    className="text-lg flex gap-1 items-center text-[#ff5200] cursor-pointer"
+                    onClick={() => setEndIndex(undefined)}
+                  >
+                    show more <ChevronDown className="size-5 text-[#ff5200]" />
+                  </button>
+                )}
+              </ul>
+            )}
           </div>
           <div className=" pl-4 w-[500px]">
             <div className="relative flex items-center w-full mx-auto my-0 rounded-2xl  h-[60px] bg-white border-[1.5px] border-solid border-[#02060c26]">
@@ -71,14 +143,6 @@ const HomeHero = () => {
                 </div>
               </div>
               <div className="absolute top-4 right-4 w-5 h-5">
-                {/* <svg
-                aria-hidden="true"
-                height="20"
-                width="20"
-                className="leading-0 [--fill-color:rgba(2,6,12,0.6)] [--stroke-color:rgba(2,6,12,0.6)]"
-              >
-                <use href="/core/sprite-CXUBnqBy.svg#search20"></use>
-              </svg> */}
                 <Search className="w-5 h-5 text-[#02060c73]" />
               </div>
             </div>

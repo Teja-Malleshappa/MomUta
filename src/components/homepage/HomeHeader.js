@@ -1,46 +1,39 @@
-import { ArrowUpRight, LucideShieldUser } from "lucide-react";
+
+import { Link } from "react-router";
 import { navList as NavList } from "../../generic/Constant";
+import { ArrowUpIcon, LucideShieldUser } from "lucide-react";
+
 const HomeHeader = () => {
   return (
-    <div className="bg-[#ff5200] py-8 px-0 flex justify-center items-center relative z-50">
-      <div className="flex justify-between items-center w-[80%]">
-        <a href="/" className="h-12 w-40 bg-transparent visited:no-underline">
-          <img
-            src="https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png"
-            className="h-full w-full"
-            loading="lazy"
-            alt="Swiggy-Logo"
-          />
-        </a>
-        <div className="flex justify-center items-center gap-8">
-          {NavList.map((item, index) => (
-            <a
-              key={index}
-              href={item.link}
-              className="text-white text-base !leading-[21px] not-italic font-semibold tracking-[-0.4px] cursor-pointer no-underline z-40 bg-transparent "
-            >
-              {item.name}
-            </a>
-          ))}
-          <a
-            href=""
-            className="flex h-[54px] py-3 px-4 justify-center items-center gap-1 rounded-xl border border-solid border-white text-white cursor-pointer  text-base !leading-[21px] not-italic font-semibold no-underline bg-transparent"
+    <section className="bg-[#ff5200] sticky">
+      <section className="py-8 w-[992] mx-auto flex items-center justify-between">
+      <Link to="/" className="w-[160px] h-[48px]">
+        <img src="https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png" />
+      </Link>
+      <ul className="flex items-center gap-8">
+        {NavList.map(({ name, link }, index) => <Link
+            to={link}
+            key={index}
+            className="text-white text-base font-semibold cursor-pointer"
           >
-            Get the App{" "}
-            <div className="leading-0">
-              <ArrowUpRight className="w-[21px] h-[21px]" strokeWidth={2.5}/>
-            </div>
-          </a>
-          <div className="relative">
-            
-            <div className="bg-gray-700 rounded-full p-2">
-              <LucideShieldUser className="w-7 h-7"  color="white"/>
-            </div>
-            
+            {name}
+          </Link>
+        )}
+        <Link
+          to=""
+          className="py-3 px-4 border border-solid border-white text-white rounded-xl cursor-pointer h-[54px] flex items-center gap-1 text-base font-semibold"
+        >
+          Get the App
+          <ArrowUpIcon className="size-6" />
+        </Link>
+        <Link to="">
+          <div className="bg-gray-700 rounded-full p-2">
+            <LucideShieldUser className="w-7 h-7" color="white" />
           </div>
-        </div>
-      </div>
-    </div>
+        </Link>
+      </ul>
+      </section>
+    </section>
   );
 };
 
