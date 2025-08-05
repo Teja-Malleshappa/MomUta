@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom/client";
 import { Outlet, RouterProvider } from "react-router";
 import { router } from "./components/appRoutes/AppRoute";
+import { store } from "../src/store/store";
+import { Provider } from "react-redux";
 
 const App = () => {
   return (
@@ -13,4 +15,8 @@ const App = () => {
 export default App;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={router} />);
+root.render(
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
+);

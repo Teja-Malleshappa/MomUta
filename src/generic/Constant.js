@@ -13,8 +13,7 @@ export const navList = [
   },
 ];
 
-export const HeroCardList = 
-[
+export const HeroCardList = [
   {
     link: "/restaurants",
     imgSrc:
@@ -119,330 +118,327 @@ export const InstamartList = [
 
 export const DineoutList = [
   {
-    "id": "645829",
-    "name": "Ambara Andhra Restaurant",
-    "rating": 3.1,
-    "cuisines": ["Chinese", "Andhra"],
-    "costForTwo": "₹800 for two",
-    "location": "Hesaraghatta, Bangalore",
-    "distance": "3.2 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1669532582/fdd679b7ce6a973019515f3fb45cb482.jpg",
-    "offers": [
+    id: "645829",
+    name: "Ambara Andhra Restaurant",
+    rating: 3.1,
+    cuisines: ["Chinese", "Andhra"],
+    costForTwo: "₹800 for two",
+    location: "Hesaraghatta, Bangalore",
+    distance: "3.2 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1669532582/fdd679b7ce6a973019515f3fb45cb482.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 30% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 30% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 2,
-    "features": ["Table booking"],
-    "link": "https://www.swiggy.com/restaurants/645829/dineout"
+    additionalOffersCount: 2,
+    features: ["Table booking"],
+    link: "https://www.swiggy.com/restaurants/645829/dineout",
   },
   {
-    "id": "655452",
-    "name": "Byg Brewski Brewing Company",
-    "rating": 4.3,
-    "cuisines": ["Continental", "North Indian"],
-    "costForTwo": "₹1500 for two",
-    "location": "Vaishnavi Sapphire Centre, Yeshwantpur, Bangalore",
-    "distance": "7.8 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1693576832/a75492e198cac2366f5cf8d911789f56.jpg",
-    "offers": [
+    id: "655452",
+    name: "Byg Brewski Brewing Company",
+    rating: 4.3,
+    cuisines: ["Continental", "North Indian"],
+    costForTwo: "₹1500 for two",
+    location: "Vaishnavi Sapphire Centre, Yeshwantpur, Bangalore",
+    distance: "7.8 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1693576832/a75492e198cac2366f5cf8d911789f56.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 25% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 25% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 3,
-    "features": ["Table booking"],
-    "link": "https://www.swiggy.com/restaurants/655452/dineout"
+    additionalOffersCount: 3,
+    features: ["Table booking"],
+    link: "https://www.swiggy.com/restaurants/655452/dineout",
   },
   {
-    "id": "61954",
-    "name": "Nando's",
-    "rating": 4.1,
-    "cuisines": ["Burger", "Portuguese"],
-    "costForTwo": "₹1500 for two",
-    "location": "Orion Mall, Rajajinagar, Bangalore",
-    "distance": "9.5 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1700728759/f4e3856825ec7b0f1a20f73782adc82c.jpg",
-    "offers": [
+    id: "61954",
+    name: "Nando's",
+    rating: 4.1,
+    cuisines: ["Burger", "Portuguese"],
+    costForTwo: "₹1500 for two",
+    location: "Orion Mall, Rajajinagar, Bangalore",
+    distance: "9.5 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1700728759/f4e3856825ec7b0f1a20f73782adc82c.jpg",
+    offers: [
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 0,
-    "features": ["Table booking"],
-    "link": "https://www.swiggy.com/restaurants/61954/dineout"
+    additionalOffersCount: 0,
+    features: ["Table booking"],
+    link: "https://www.swiggy.com/restaurants/61954/dineout",
   },
   {
-    "id": "519840",
-    "name": "Pizza Brew House",
-    "rating": 3.9,
-    "cuisines": ["Continental"],
-    "costForTwo": "₹900 for two",
-    "location": "New BEL Road, Bangalore",
-    "distance": "10.4 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1708428277/2dced316e68aff5c5a8c17e4d95d7632.jpg",
-    "offers": [
+    id: "519840",
+    name: "Pizza Brew House",
+    rating: 3.9,
+    cuisines: ["Continental"],
+    costForTwo: "₹900 for two",
+    location: "New BEL Road, Bangalore",
+    distance: "10.4 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1708428277/2dced316e68aff5c5a8c17e4d95d7632.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 50% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 50% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 6,
-    "features": ["Table booking", "Free Mocktail"],
-    "link": "https://www.swiggy.com/restaurants/519840/dineout"
+    additionalOffersCount: 6,
+    features: ["Table booking", "Free Mocktail"],
+    link: "https://www.swiggy.com/restaurants/519840/dineout",
   },
   {
-    "id": "811750",
-    "name": "Orah Brew Garden",
-    "rating": 4.5,
-    "cuisines": ["Continental"],
-    "costForTwo": "₹1200 for two",
-    "location": "Prestige Plaza, Yelahanka, Bangalore",
-    "distance": "10.7 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1709127449/7e073df0e10fb3cae4e603c866ae08fd.jpg",
-    "offers": [
+    id: "811750",
+    name: "Orah Brew Garden",
+    rating: 4.5,
+    cuisines: ["Continental"],
+    costForTwo: "₹1200 for two",
+    location: "Prestige Plaza, Yelahanka, Bangalore",
+    distance: "10.7 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1709127449/7e073df0e10fb3cae4e603c866ae08fd.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 20% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 20% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
+        type: "bank",
+        description: "Up to 10% off with bank offers",
       },
       {
-        "type": "coupon",
-        "description": "Get extra 10% off using SAVE150UPI"
-      }
+        type: "coupon",
+        description: "Get extra 10% off using SAVE150UPI",
+      },
     ],
-    "additionalOffersCount": 2,
-    "features": ["Table booking", "Free Beer"],
-    "link": "https://www.swiggy.com/restaurants/811750/dineout"
+    additionalOffersCount: 2,
+    features: ["Table booking", "Free Beer"],
+    link: "https://www.swiggy.com/restaurants/811750/dineout",
   },
   {
-    "id": "828725",
-    "name": "Nando's",
-    "rating": 4.6,
-    "cuisines": ["American"],
-    "costForTwo": "₹1700 for two",
-    "location": "Phoenix Mall Of Asia, Yelahanka, Bangalore",
-    "distance": "11.9 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/7/26/901bf109-d775-4b89-a737-fc5df35ae80c_P1233221EnhancedNRa8b13b82fee1477da7020c5d2a6d0e41.JPG",
-    "offers": [
+    id: "828725",
+    name: "Nando's",
+    rating: 4.6,
+    cuisines: ["American"],
+    costForTwo: "₹1700 for two",
+    location: "Phoenix Mall Of Asia, Yelahanka, Bangalore",
+    distance: "11.9 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/7/26/901bf109-d775-4b89-a737-fc5df35ae80c_P1233221EnhancedNRa8b13b82fee1477da7020c5d2a6d0e41.JPG",
+    offers: [
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 0,
-    "features": ["Table booking"],
-    "link": "https://www.swiggy.com/restaurants/828725/dineout"
+    additionalOffersCount: 0,
+    features: ["Table booking"],
+    link: "https://www.swiggy.com/restaurants/828725/dineout",
   },
   {
-    "id": "838122",
-    "name": "Eight",
-    "rating": 4.4,
-    "cuisines": ["Asian", "Japanese"],
-    "costForTwo": "₹2600 for two",
-    "location": "Phoenix Mall Of Asia, Yelahanka, Bangalore",
-    "distance": "13.1 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1708353196/760b2f1d0fef8dc0dbac40954fd0c625.jpg",
-    "offers": [
+    id: "838122",
+    name: "Eight",
+    rating: 4.4,
+    cuisines: ["Asian", "Japanese"],
+    costForTwo: "₹2600 for two",
+    location: "Phoenix Mall Of Asia, Yelahanka, Bangalore",
+    distance: "13.1 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1708353196/760b2f1d0fef8dc0dbac40954fd0c625.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 25% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 25% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 4,
-    "features": ["Table booking", "Free Dessert"],
-    "link": "https://www.swiggy.com/restaurants/838122/dineout"
+    additionalOffersCount: 4,
+    features: ["Table booking", "Free Dessert"],
+    link: "https://www.swiggy.com/restaurants/838122/dineout",
   },
   {
-    "id": "371065",
-    "name": "Collage By Toscano",
-    "rating": 4.3,
-    "cuisines": ["Italian", "Pizza"],
-    "costForTwo": "₹1600 for two",
-    "location": "The Forum Value Mall, Whitefield, Bangalore",
-    "distance": "34.9 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1682456468/88f65a550722136fdca4f057a6c6b88a.jpg",
-    "offers": [
+    id: "371065",
+    name: "Collage By Toscano",
+    rating: 4.3,
+    cuisines: ["Italian", "Pizza"],
+    costForTwo: "₹1600 for two",
+    location: "The Forum Value Mall, Whitefield, Bangalore",
+    distance: "34.9 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1682456468/88f65a550722136fdca4f057a6c6b88a.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 25% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 25% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 4,
-    "features": ["Table booking"],
-    "link": "https://www.swiggy.com/restaurants/371065/dineout"
+    additionalOffersCount: 4,
+    features: ["Table booking"],
+    link: "https://www.swiggy.com/restaurants/371065/dineout",
   },
   {
-    "id": "707442",
-    "name": "Toscano",
-    "rating": 4.4,
-    "cuisines": ["Italian", "Pizza"],
-    "costForTwo": "₹1600 for two",
-    "location": "Nexus Shantiniketan Mall, Whitefield, Bangalore",
-    "distance": "29.9 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1708948961/8c30e3ccef26ec7f82f8ab1e73b745ff.jpg",
-    "offers": [
+    id: "707442",
+    name: "Toscano",
+    rating: 4.4,
+    cuisines: ["Italian", "Pizza"],
+    costForTwo: "₹1600 for two",
+    location: "Nexus Shantiniketan Mall, Whitefield, Bangalore",
+    distance: "29.9 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1708948961/8c30e3ccef26ec7f82f8ab1e73b745ff.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 20% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 20% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
-      }
+        type: "bank",
+        description: "Up to 10% off with bank offers",
+      },
     ],
-    "additionalOffersCount": 2,
-    "features": ["Table booking"],
-    "link": "https://www.swiggy.com/restaurants/707442/dineout"
+    additionalOffersCount: 2,
+    features: ["Table booking"],
+    link: "https://www.swiggy.com/restaurants/707442/dineout",
   },
   {
-    "id": "580739",
-    "name": "Bangalore Adda",
-    "rating": 4.5,
-    "cuisines": ["Continental", "Italian"],
-    "costForTwo": "₹1400 for two",
-    "location": "Samruddhi Building, New BEL Road, Bangalore",
-    "distance": "9.6 km",
-    "imageUrl": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1669360140/13f22cf9bd6c9261360168da670fdb86.jpg",
-    "offers": [
+    id: "580739",
+    name: "Bangalore Adda",
+    rating: 4.5,
+    cuisines: ["Continental", "Italian"],
+    costForTwo: "₹1400 for two",
+    location: "Samruddhi Building, New BEL Road, Bangalore",
+    distance: "9.6 km",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1669360140/13f22cf9bd6c9261360168da670fdb86.jpg",
+    offers: [
       {
-        "type": "pre-booking",
-        "description": "Flat 50% off on pre-booking"
+        type: "pre-booking",
+        description: "Flat 50% off on pre-booking",
       },
       {
-        "type": "bank",
-        "description": "Up to 10% off with bank offers"
+        type: "bank",
+        description: "Up to 10% off with bank offers",
       },
       {
-        "type": "coupon",
-        "description": "Get extra 10% off using BFAST100"
-      }
+        type: "coupon",
+        description: "Get extra 10% off using BFAST100",
+      },
     ],
-    "additionalOffersCount": 3,
-    "features": ["Table booking"],
-    "link": "https://www.swiggy.com/restaurants/580739/dineout"
-  }
-]
+    additionalOffersCount: 3,
+    features: ["Table booking"],
+    link: "https://www.swiggy.com/restaurants/580739/dineout",
+  },
+];
 
 export const FoodDeliveryCities = [
+  { city: "Bangalore", url: "https://www.swiggy.com/city/bangalore" },
+  { city: "Gurgaon", url: "https://www.swiggy.com/city/gurgaon" },
+  { city: "Hyderabad", url: "https://www.swiggy.com/city/hyderabad" },
+  { city: "Delhi", url: "https://www.swiggy.com/city/delhi" },
+  { city: "Mumbai", url: "https://www.swiggy.com/city/mumbai" },
+  { city: "Pune", url: "https://www.swiggy.com/city/pune" },
+  { city: "Kolkata", url: "https://www.swiggy.com/city/kolkata" },
+  { city: "Chennai", url: "https://www.swiggy.com/city/chennai" },
+  { city: "Ahmedabad", url: "https://www.swiggy.com/city/ahmedabad" },
+  { city: "Chandigarh", url: "https://www.swiggy.com/city/chandigarh" },
+  { city: "Jaipur", url: "https://www.swiggy.com/city/jaipur" },
+  { city: "Lucknow", url: "https://www.swiggy.com/city/lucknow" },
+  { city: "Indore", url: "https://www.swiggy.com/city/indore" },
+  { city: "Nagpur", url: "https://www.swiggy.com/city/nagpur" },
+  { city: "Bhopal", url: "https://www.swiggy.com/city/bhopal" },
+  { city: "Visakhapatnam", url: "https://www.swiggy.com/city/visakhapatnam" },
+  { city: "Ludhiana", url: "https://www.swiggy.com/city/ludhiana" },
+  { city: "Patna", url: "https://www.swiggy.com/city/patna" },
+  { city: "Vadodara", url: "https://www.swiggy.com/city/vadodara" },
+  { city: "Surat", url: "https://www.swiggy.com/city/surat" },
+  { city: "Kanpur", url: "https://www.swiggy.com/city/kanpur" },
+  { city: "Coimbatore", url: "https://www.swiggy.com/city/coimbatore" },
+  { city: "Rajkot", url: "https://www.swiggy.com/city/rajkot" },
+  { city: "Amritsar", url: "https://www.swiggy.com/city/amritsar" },
+  { city: "Nashik", url: "https://www.swiggy.com/city/nashik" },
   {
-    "city": "Bangalore",
-    "url": "https://www.swiggy.com/city/bangalore"
+    city: "Thiruvananthapuram",
+    url: "https://www.swiggy.com/city/thiruvananthapuram",
   },
   {
-    "city": "Gurgaon",
-    "url": "https://www.swiggy.com/city/gurgaon"
+    city: "Mysore",
+    url: "https://www.swiggy.com/city/mysore",
   },
-  {
-    "city": "Hyderabad",
-    "url": "https://www.swiggy.com/city/hyderabad"
-  },
-  {
-    "city": "Delhi",
-    "url": "https://www.swiggy.com/city/delhi"
-  },
-  {
-    "city": "Mumbai",
-    "url": "https://www.swiggy.com/city/mumbai"
-  },
-  {
-    "city": "Pune",
-    "url": "https://www.swiggy.com/city/pune"
-  },
-  {
-    "city": "Kolkata",
-    "url": "https://www.swiggy.com/city/kolkata"
-  },
-  {
-    "city": "Chennai",
-    "url": "https://www.swiggy.com/city/chennai"
-  },
-  {
-    "city": "Ahmedabad",
-    "url": "https://www.swiggy.com/city/ahmedabad"
-  },
-  {
-    "city": "Chandigarh",
-    "url": "https://www.swiggy.com/city/chandigarh"
-  },
-  {
-    "city": "Jaipur",
-    "url": "https://www.swiggy.com/city/jaipur"
-  }
-]
+];
 
 export const InstamartDeliveryCities = [
+  { city: "Bangalore", url: "https://www.swiggy.com/instamart/city/bangalore" },
+  { city: "Gurgaon", url: "https://www.swiggy.com/instamart/city/gurgaon" },
+  { city: "Hyderabad", url: "https://www.swiggy.com/instamart/city/hyderabad" },
+  { city: "Delhi", url: "https://www.swiggy.com/instamart/city/delhi" },
+  { city: "Mumbai", url: "https://www.swiggy.com/instamart/city/mumbai" },
+  { city: "Pune", url: "https://www.swiggy.com/instamart/city/pune" },
+  { city: "Kolkata", url: "https://www.swiggy.com/instamart/city/kolkata" },
+  { city: "Chennai", url: "https://www.swiggy.com/instamart/city/chennai" },
+  { city: "Ahmedabad", url: "https://www.swiggy.com/instamart/city/ahmedabad" },
   {
-    "city": "Bangalore",
-    "url": "https://www.swiggy.com/instamart/city/bangalore"
+    city: "Chandigarh",
+    url: "https://www.swiggy.com/instamart/city/chandigarh",
+  },
+  { city: "Jaipur", url: "https://www.swiggy.com/instamart/city/jaipur" },
+  { city: "Lucknow", url: "https://www.swiggy.com/instamart/city/lucknow" },
+  { city: "Indore", url: "https://www.swiggy.com/instamart/city/indore" },
+  { city: "Nagpur", url: "https://www.swiggy.com/instamart/city/nagpur" },
+  { city: "Bhopal", url: "https://www.swiggy.com/instamart/city/bhopal" },
+  {
+    city: "Visakhapatnam",
+    url: "https://www.swiggy.com/instamart/city/visakhapatnam",
+  },
+  { city: "Ludhiana", url: "https://www.swiggy.com/instamart/city/ludhiana" },
+  { city: "Patna", url: "https://www.swiggy.com/instamart/city/patna" },
+  { city: "Vadodara", url: "https://www.swiggy.com/instamart/city/vadodara" },
+  { city: "Surat", url: "https://www.swiggy.com/instamart/city/surat" },
+  { city: "Kanpur", url: "https://www.swiggy.com/instamart/city/kanpur" },
+  {
+    city: "Coimbatore",
+    url: "https://www.swiggy.com/instamart/city/coimbatore",
+  },
+  { city: "Rajkot", url: "https://www.swiggy.com/instamart/city/rajkot" },
+  { city: "Amritsar", url: "https://www.swiggy.com/instamart/city/amritsar" },
+  { city: "Nashik", url: "https://www.swiggy.com/instamart/city/nashik" },
+  {
+    city: "Thiruvananthapuram",
+    url: "https://www.swiggy.com/instamart/city/thiruvananthapuram",
   },
   {
-    "city": "Gurgaon",
-    "url": "https://www.swiggy.com/instamart/city/gurgaon"
+    city: "Mysore",
+    url: "https://www.swiggy.com/instamart/city/mysore",
   },
-  {
-    "city": "Hyderabad",
-    "url": "https://www.swiggy.com/instamart/city/hyderabad"
-  },
-  {
-    "city": "Delhi",
-    "url": "https://www.swiggy.com/instamart/city/delhi"
-  },
-  {
-    "city": "Mumbai",
-    "url": "https://www.swiggy.com/instamart/city/mumbai"
-  },
-  {
-    "city": "Pune",
-    "url": "https://www.swiggy.com/instamart/city/pune"
-  },
-  {
-    "city": "Kolkata",
-    "url": "https://www.swiggy.com/instamart/city/kolkata"
-  },
-  {
-    "city": "Chennai",
-    "url": "https://www.swiggy.com/instamart/city/chennai"
-  },
-  {
-    "city": "Ahmedabad",
-    "url": "https://www.swiggy.com/instamart/city/ahmedabad"
-  },
-  {
-    "city": "Chandigarh",
-    "url": "https://www.swiggy.com/instamart/city/chandigarh"
-  },
-  {
-    "city": "Jaipur",
-    "url": "https://www.swiggy.com/instamart/city/jaipur"
-  }
-]
+];
 
 export const navSections = {
   company: {
@@ -456,45 +452,74 @@ export const navSections = {
       { name: "Swiggy Instamart", link: "https://www.swiggy.com/instamart" },
       { name: "Swiggy Dineout", link: "https://www.swiggy.com/dineout" },
       { name: "Minis", link: "https://mini.store/" },
-      { name: "Pyng", link: "https://pyng.co.in/" }
-    ]
+      { name: "Pyng", link: "https://pyng.co.in/" },
+    ],
   },
   contact: {
     heading: "Contact Us",
     items: [
       { name: "Help & Support", link: "https://www.swiggy.com/support" },
-      { name: "Partner with us", link: "https://partner-with-us.swiggy.com/onboard#/swiggy" },
-      { name: "Ride with us", link: "https://ride.swiggy.com" }
-    ]
+      {
+        name: "Partner with us",
+        link: "https://partner-with-us.swiggy.com/onboard#/swiggy",
+      },
+      { name: "Ride with us", link: "https://ride.swiggy.com" },
+    ],
   },
   legal: {
     heading: "Legal",
     items: [
-      { name: "Terms & Conditions", link: "https://www.swiggy.com/terms-and-conditions" },
+      {
+        name: "Terms & Conditions",
+        link: "https://www.swiggy.com/terms-and-conditions",
+      },
       { name: "Cookie Policy", link: "https://www.swiggy.com/cookie-policy" },
-      { name: "Privacy Policy", link: "https://www.swiggy.com/privacy-policy" }
-    ]
+      { name: "Privacy Policy", link: "https://www.swiggy.com/privacy-policy" },
+    ],
   },
   availableCities: {
     heading: "Available in:",
     items: [
-      { name: "bangalore", link: "https://www.swiggy.com/city/bangalore" },
-      { name: "gurgaon", link: "https://www.swiggy.com/city/gurgaon" },
-      { name: "hyderabad", link: "https://www.swiggy.com/city/hyderabad" },
-      { name: "delhi", link: "https://www.swiggy.com/city/delhi" },
-      { name: "mumbai", link: "https://www.swiggy.com/city/mumbai" },
-      { name: "pune", link: "https://www.swiggy.com/city/pune" },
-      { name: "685 cities", link: null } 
-    ]
+      { name: "Bangalore", link: "https://www.swiggy.com/city/bangalore" },
+      { name: "Gurgaon", link: "https://www.swiggy.com/city/gurgaon" },
+      { name: "Hyderabad", link: "https://www.swiggy.com/city/hyderabad" },
+      { name: "Delhi", link: "https://www.swiggy.com/city/delhi" },
+      { name: "Mumbai", link: "https://www.swiggy.com/city/mumbai" },
+      { name: "Pune", link: "https://www.swiggy.com/city/pune" },
+      { name: "Chennai", link: "https://www.swiggy.com/city/chennai" },
+      { name: "Kolkata", link: "https://www.swiggy.com/city/kolkata" },
+      { name: "Ahmedabad", link: "https://www.swiggy.com/city/ahmedabad" },
+      { name: "Jaipur", link: "https://www.swiggy.com/city/jaipur" },
+      { name: "Lucknow", link: "https://www.swiggy.com/city/lucknow" },
+      { name: "Bhopal", link: "https://www.swiggy.com/city/bhopal" },
+      { name: "Indore", link: "https://www.swiggy.com/city/indore" },
+      { name: "Kochi", link: "https://www.swiggy.com/city/kochi" },
+      {
+        name: "Visakhapatnam",
+        link: "https://www.swiggy.com/city/visakhapatnam",
+      },
+      { name: "Nagpur", link: "https://www.swiggy.com/city/nagpur" },
+      { name: "Surat", link: "https://www.swiggy.com/city/surat" },
+      { name: "Patna", link: "https://www.swiggy.com/city/patna" },
+      { name: "Vadodara", link: "https://www.swiggy.com/city/vadodara" },
+      { name: "Ludhiana", link: "https://www.swiggy.com/city/ludhiana" },
+      { name: "Agra", link: "https://www.swiggy.com/city/agra" },
+    ],
   },
   lifeAtSwiggy: {
     heading: "Life at Swiggy",
     items: [
       { name: "Explore with Swiggy", link: "https://blog.swiggy.com/" },
-      { name: "Swiggy News", link: "https://blog.swiggy.com/category/swiggy-restaurant-awards/" },
-      { name: "Snackables", link: "https://blog.swiggy.com/category/snackables/campaigns/" }
-    ]
-  }
+      {
+        name: "Swiggy News",
+        link: "https://blog.swiggy.com/category/swiggy-restaurant-awards/",
+      },
+      {
+        name: "Snackables",
+        link: "https://blog.swiggy.com/category/snackables/campaigns/",
+      },
+    ],
+  },
 };
 
 export const RestaurantsHeaderNav = [
@@ -504,5 +529,4 @@ export const RestaurantsHeaderNav = [
   { name: "Help", icon: <IoHelpBuoySharp /> },
   { name: "Teja M", icon: <SlUser /> },
   { name: "Cart", icon: <FaCartArrowDown /> },
-  
-]
+];

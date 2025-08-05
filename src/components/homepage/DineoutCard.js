@@ -1,4 +1,5 @@
 import { CalendarCheck, PercentCircle, Star } from "lucide-react";
+import { Link } from "react-router";
 
 const DineoutCard = ({ item }) => {
   const {
@@ -15,10 +16,10 @@ const DineoutCard = ({ item }) => {
     imageUrl,
   } = item;
   return (
-    <a
-      href={link}
+    <Link
+      to={link}
       target="_blank"
-      className="min-w-[328px] bg-white rounded-2xl h-fit border border-solid border-[#02060c14] no-underline block [filter:drop-shadow(0px_0px_7.905px_rgba(27,30,36,0.08))]"
+      className="snap-start min-w-[328px] bg-white rounded-2xl h-fit border border-solid border-[#02060c14] no-underline block [filter:drop-shadow(0px_0px_7.905px_rgba(27,30,36,0.08))]"
     >
       <div className="relative w-full h-[189px] rounded-2xl">
         <div className="flex justify-center items-center w-full rounded-2xl h-[calc(100%-50px)]">
@@ -56,7 +57,7 @@ const DineoutCard = ({ item }) => {
             {distance}
           </p>
         </div>
-        <div className="flex gap-1 mt-[10px] mr-[-12px] overflow-scroll ">
+        <div className="flex gap-1 mt-[10px] mr-[-12px] overflow-scroll no-scrollbar">
           {features?.map((feature, index) => (
             <div
               key={index}
@@ -93,7 +94,7 @@ const DineoutCard = ({ item }) => {
           </div>
         )}
       </div>
-    </a>
+    </Link>
   );
 };
 

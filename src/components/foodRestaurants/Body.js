@@ -1,30 +1,41 @@
-import { useEffect, useState } from "react";
-import { BsDot } from "react-icons/bs";
-import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa6";
+import { useEffect, useRef } from "react";
 import CarouselHeading from "../../generic/CarouselHeading";
-import { Food_Image_Card_API } from "../../generic/Api";
 import FoodImageCard from "./FoodImageCard";
 import RestaurantCard from "./RestaurantCard";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  fetchOnMindData,
+  fetchBlrRestoData,
+  fecthSwiggyData,
+} from "../../features/swiggySlice";
+import { onClickScroll } from "../../generic/ScrollGenerics";
 
 const Body = () => {
-  const [onMindData, setOnMindData] = useState({});
-  const [blrRestoData, setBlrRestoData] = useState({});
+  const dispatch = useDispatch();
+  const { onMindData, blrRestoData } = useSelector((state) => state.swiggy);
+  const {
+    locations,
+    addressRecommended: {
+      geometry: { location: { lat = "", lng = "" } = {} } = {},
+    } = {},
+  } = useSelector((state) => state?.location);
+  const foodRef = useRef();
+  const restourantRef = useRef();
 
-  const fetchData = async () => {
-    const response = await fetch(
-         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9257252&lng=77.7002566&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+  // const fetchData = async () => {
+  //   const response = await fetch(
+  //     "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9257252&lng=77.7002566&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+  //   );
 
-    
-    const data = await response.json();
-console.log(data);
+  //   const data = await response.json();
 
-    setOnMindData(data?.data?.cards?.[0]?.card?.card);
-    setBlrRestoData(data?.data?.cards?.[1]?.card?.card);
-  };
+  //   dispatch(fetchOnMindData(data?.data?.cards?.[0]?.card?.card));
+  //   dispatch(fetchBlrRestoData(data?.data?.cards?.[1]?.card?.card));
+  // };
+  console.log(locations, lat, lng);
 
   useEffect(() => {
-    fetchData();
+    dispatch(fecthSwiggyData());
   }, []);
 
   const { header: onMindHeader, imageGridCards } = onMindData ?? {};
@@ -34,24 +45,37 @@ console.log(data);
   const { infoWithStyle } = gridElements ?? {};
   const { restaurants } = infoWithStyle ?? {};
 
-
   return (
-    <div className="flex flex-col">
+    <main className="flex flex-col">
       {onMindData && (
-        <div className="mx-[calc(7%+52px)] p-4 flex flex-col">
-          <CarouselHeading title={onMindHeader?.title} />
-          <div className="flex overflow-y-hidden overflow-x-auto px-4 gap-6 no-scrollbar">
+        <section className="mx-[calc(7%+52px)] p-4 flex flex-col">
+          <CarouselHeading
+            title={onMindHeader?.title}
+            scrollNext={() => onClickScroll(1, foodRef)}
+            scrollPrev={() => onClickScroll(-1, foodRef)}
+          />
+          <menu
+            className="flex overflow-y-hidden overflow-x-auto px-4 gap-6 no-scrollbar"
+            ref={foodRef}
+          >
             {onMindCards?.map(({ id, imageId, action: { link } }) => (
               <FoodImageCard key={id} imageId={imageId} link={link} />
             ))}
-          </div>
-        </div>
+          </menu>
+        </section>
       )}
       <hr className="border-t-2 border-solid border-[#02060c0d] my-8 w-[80%] mx-auto" />
       {blrRestoData && (
-        <div className="mx-[calc(7%+52px)] p-4 flex flex-col">
-          <CarouselHeading title={blrRestoHeader?.title} />
-          <div className="flex overflow-y-hidden overflow-x-auto px-4 gap-6 no-scrollbar">
+        <section className="mx-[calc(7%+52px)] p-4 flex flex-col">
+          <CarouselHeading
+            title={blrRestoHeader?.title}
+            scrollNext={() => onClickScroll(1, restourantRef)}
+            scrollPrev={() => onClickScroll(-1, restourantRef)}
+          />
+          <menu
+            className="flex overflow-y-hidden overflow-x-auto px-4 gap-6 no-scrollbar"
+            ref={restourantRef}
+          >
             {restaurants?.map(
               ({
                 info: {
@@ -79,10 +103,10 @@ console.log(data);
                 />
               )
             )}
-          </div>
-        </div>
+          </menu>
+        </section>
       )}
-    </div>
+    </main>
   );
 };
 export default Body;

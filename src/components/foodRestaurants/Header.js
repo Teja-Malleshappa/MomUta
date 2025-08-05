@@ -1,12 +1,12 @@
 import { ChevronDown } from "lucide-react";
 import { RestaurantsHeaderNav } from "../../generic/Constant";
+import { Link } from "react-router";
 
 const Header = () => {
   return (
     <div className="flex items-center justify-between w-full px-7 sticky shadow">
         <div className="flex items-center">
-      <a
-        href="/"
+      <Link        to="/"
         className="transition-transform ease-in-out duration-300 hover:scale-105 mr-4"
       >
         <svg viewBox="0 0 61 61" height="49" width="49">
@@ -28,7 +28,7 @@ const Header = () => {
             </clipPath>
           </defs>
         </svg>
-      </a>
+      </Link>
       <div className="flex py-[30px] items-center group max-w-[300px] ml-[30px] h-[30px] pr-2.5">
         <p className="text-[#02060c] uppercase text-sm !leading-[16.8px] font-semibold group-hover:text-[#ff5200] underline underline-offset-[6px] cursor-pointer">
           Home
